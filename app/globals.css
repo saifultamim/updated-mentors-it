@@ -1,10 +1,10 @@
-@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #171717; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +17,31 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: 'RegularBrush', sans-serif; */
+  font-family: 'RegularBrush', sans-serif;
+}
+
+/* @font-face {
+  font-family: 'RegularBrush'; 
+  src: url('/fonts/RegularBrush.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+/* .start {
+  font-family: 'RegularBrush', sans-serif; 
+  
+} */
+
+@font-face {
+  font-family: 'Nord-Bold'; 
+  src: url('/fonts/Nord-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+.start {
+  font-family: 'Nord-Bold', sans-serif; 
+  
 }
