@@ -35,7 +35,7 @@ const Room_link_form: React.FC<room_link_formProps> = ({ title, fields, onSubmit
   return (
    <div className='w-full  '>
     <div className='w-full flex justify-end border border-black'>
-    <div className="w-8/12  border border-black text-[12px] montserat">
+    <div className=" w-full lg:w-8/12 exl:w-8/12 uws:w-8/12  border border-black text-[12px] montserat">
       {/* Form Title */}
       <h2 className="text-right font-semibold text-[20px] text-black mb-6">{title}</h2>
 

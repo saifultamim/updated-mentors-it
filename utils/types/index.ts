@@ -58,7 +58,15 @@ export interface FormData {
     title: string;
     fields: room_link_formField[];
     onSubmit: () => void;
-    onEnd: (parameter: string) => void; // Update to accept a parameter
+    onEnd: (parameter: string) => void;
     onRecommendation?: (recommendation: string) => void;
     bool?:boolean
   }
+
+
+
+  export type LoginFormProps = {
+    params?: string; 
+    role?: string;
+  };
+  
