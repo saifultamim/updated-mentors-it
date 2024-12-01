@@ -45,7 +45,7 @@ const page = () => {
     <p className="bg-black px-4 py-2 w-fit montserat font-semibold text-[16px] md:text-[20px] rounded-tr-[12px] rounded-br-[12px] uws:text-[30px]">
       COURSE DETAILS
     </p>
-    <div className="grid xs:pl-0 sm:pl-0 md:pl-4 lg:pl-4 exl:pl-4 uws:pl-4  gap-4">
+    <div className="grid xs:pl-2 sm:pl-2 md:pl-4 lg:pl-4 exl:pl-4 uws:pl-4  gap-4">
       {courseDetails?.map((params, idx) => (
         <div key={idx} className="flex items-center gap-4">
           <Image
@@ -61,7 +61,7 @@ const page = () => {
           </p>
         </div>
       ))}
-      <button className="bg-black text-white w-full md:w-[262px] py-2 text-[16px] md:text-[20px] rounded-[6px]  uws:text-[36px] mt-6">
+      <button className="bg-black text-white   w-[180px] md:w-[262px] py-2 text-[16px] md:text-[20px] rounded-[6px]  uws:text-[36px] mt-6">
         Enroll now
       </button>
     </div>

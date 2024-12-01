@@ -49,7 +49,7 @@ const page = () => {
                 width={1000} 
                 height={200} 
                
-                className='w-full h-[300px] md:h-[453px] lg:h-[453px]' 
+                className='w-full h-[300px] md:h-[453px] lg:h-[453px] uws:h-[550px]' 
             />
             <div className='absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-48 md:-mt-72 lg:-mt-72 text-white'>
                <p className=''>Success Story</p>

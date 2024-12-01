@@ -9,7 +9,7 @@ const Page = () => {
     const [pin, setPin] = useState("");
     const room_live_data = [
         
-        { id: "topic", type: "text", placeholder: "TOPIC", value: topic, onChange: setTopic },
+        { id: "topic", type: "text",name:'topic', placeholder: "TOPIC", value: topic, onChange: setTopic },
         { id: "meetingId", type: "text", placeholder: "Meeting ID", value: meetingId, onChange: setMeetingId },
         { id: "pin", type: "text", placeholder: "PIN", value: pin, onChange: setPin },
       

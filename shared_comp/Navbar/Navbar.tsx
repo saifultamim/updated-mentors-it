@@ -121,7 +121,7 @@ const Navbar = () => {
         <Link href="/success_story" className={`text-lg hover:bg-gray-700 px-6 py-2 uws:text-[28px] ${color == 'successStory' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('successStory')}}>SUCCESS STORY</Link>
         <Link href="/contact" className={`text-lg hover:bg-gray-700 px-6 py-2 uws:text-[28px] ${color == 'contact' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('contact')}}>CONTACT</Link>
         <Link href="/career" className={`text-lg hover:bg-gray-700 px-6 py-2 uws:text-[28px] ${color == 'career' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('career')}}>CAREER</Link>
-        <Link href="#" className="bg-[#ED1C24] px-4 py-2 rounded text-white hover:bg-red-600 uws:text-[28px]">Student Log In</Link>
+        <Link href="/login" className="bg-[#ED1C24] px-4 py-2 rounded text-white hover:bg-red-600 uws:text-[28px]">Student Log In</Link>
       </div>
 
       {/* Hamburger Menu for Mobile */}
@@ -174,7 +174,7 @@ const Navbar = () => {
           <Link href="/success_story" className={`text-lg hover:bg-gray-700 px-6 py-2 ${color == 'successStory' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('successStory')}}>SUCCESS STORY</Link>
           <Link href="/contact" className={`text-lg hover:bg-gray-700 px-6 py-2 ${color == 'contact' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('contact')}}>CONTACT</Link>
           <Link href="/career" className={`text-lg hover:bg-gray-700 px-6 py-2 ${color == 'career' ? 'text-red-600' : 'text-white'}`} onClick={()=>{closeDropdowns();handleColorChange('career')}}>CAREER</Link>
-          <Link href="#" className="bg-[#ED1C24] px-6 py-2 rounded text-white hover:bg-red-600" onClick={closeDropdowns}>Student Log In</Link>
+          <Link href="/login" className="bg-[#ED1C24] px-6 py-2 rounded text-white hover:bg-red-600" onClick={closeDropdowns}>Student Log In</Link>
         </div>
       )}
     </nav>

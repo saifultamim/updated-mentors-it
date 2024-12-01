@@ -58,12 +58,12 @@ const Page = () => {
         console.log('Form Data Submitted:', formData);
       };
     return (
-        <div>
-            <Student_panel>
+        <div className='overflow-y-auto bg-black'>
+            <Student_panel url_dashboard_color_change='Live Support'>
            <div className='lg:flex xs:grid gap-8 px-4'>
-            <div className='w-5/12 xs:w-full px-4 h-[381px] border-1 border-[#ED1C24] rounded-[21px] shadow-lg shadow-[#ED1C24] flex flex-col justify-center mt-10 '>
+            <div className='lg:w-6/12  xs:w-5/6 xs:h-[250px] sm:w-5/6 sm:h-[250px] mx-auto px-4 lg:h-auto border-1 border-[#ED1C24] rounded-[21px] shadow-lg shadow-[#ED1C24] flex flex-col justify-center mt-10 '>
                 <Image alt='live_session' src={live_session} width={102} height={102} className=' mx-auto' />
-                <p className='montserrat text-[32px] font-bold border border-black text-center leading-8 mt-4'>START <br/><span className='font-black'>LIVE SESSION</span></p>
+                <p className='montserrat text-[32px] font-bold  text-center leading-8 mt-4 text-white'>START <br/><span className='font-black'>LIVE SESSION</span></p>
                 </div>
             <div className=' w-full'>
             <form onSubmit={handleSubmit}>
@@ -103,12 +103,14 @@ const Page = () => {
            {/* timeline  start*/}
           <div className='mx-auto'>
             <p className='text-[36px] montserrat font-bold text-center'>TIME LINE</p>
-            <div className=' grid grid-cols-1 lg:flex justify-between  gap-8 '>
+            <div className=' grid grid-cols-1 exl:flex justify-center  gap-8 '>
                
-                 <div className='flex flex-col items-end'>
+                 <div className='flex flex-col  items-end'>
                     {
                         timeline_data?.map((params,idx)=>(<div key={idx} 
-                          style={{ width: `${(12 - idx) / 12 * 100}%` }}>
+                           style={{ width: `${(12 - idx) / 12 * 100}%` }}
+                           className='mt-7'
+                         >
                         <div> 
                         <Timeline params={params} ></Timeline>
                         </div>
@@ -119,7 +121,9 @@ const Page = () => {
                  <div className='flex flex-col items-end'>
                     {
                         timeline_data2?.map((params,idx)=>(<div key={idx} 
-                          style={{ width: `${(12 - idx) / 12 * 100}%` }}>
+                          style={{ width: `${(12 - idx) / 12 * 100}%` }}
+                          className='mt-7'
+                          >
                         <div> 
                         <Timeline params={params} ></Timeline>
                         </div>

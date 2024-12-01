@@ -81,6 +81,20 @@ const cardData = [
     level: "Level 5",
     imageSrc: "/images/home/courses/digital_marketing2.png"
   },
+  {
+    id: 12,
+    title: (<> DIGITAL12 <br/> MARKETING </>),
+    subtitle: "Mastery",
+    level: "Level 5",
+    imageSrc: "/images/home/courses/digital_marketing2.png"
+  },
+  {
+    id: 13,
+    title: (<> DIGITAL13 <br/> MARKETING </>),
+    subtitle: "Mastery",
+    level: "Level 5",
+    imageSrc: "/images/home/courses/digital_marketing2.png"
+  },
   // Add more cards as needed
 ];
 
@@ -88,15 +102,15 @@ const Courses = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % (cardData.length - 2));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (cardData.length));
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + cardData.length - 2) % (cardData.length - 2));
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + cardData.length) % (cardData.length));
   };
 
   // Get 3 cards to show at a time
-  const displayedCards = cardData.slice(currentIndex, currentIndex + 3);
+  const displayedCards = cardData.slice(currentIndex, currentIndex + 1);
 
   return (
     // first container
@@ -104,8 +118,8 @@ const Courses = () => {
       {/* second container */}
      <div className='flex flex-col md:flex-row lg:flex-row items-end absolute -mt-6 lg:-mt-10   '>
        {/* First section with a static card */}
-       <div className='border-b-4 border-b-[#DA0041] w-72 mx-auto md:w-full lg:w-[302px] h-[520px] lg:h-[580px] uws:w-[600px] uws:h-[850px] '>
-        <div className='lg:w-[302px] h-[500px] lg:h-[529px] border-2 border-white p-3 bg-black rounded-[13px] uws:w-[600px] uws:h-[800px] '>
+       <div className='border-b-4 border-b-[#DA0041] w-72 mx-auto md:w-[302px]  lg:w-[302px] h-[520px] lg:h-[580px] uws:w-[600px] uws:h-[850px] '>
+        <div className='md:w-[302px] lg:w-[302px] h-[500px] lg:h-[529px] border-2 border-white p-3 bg-black rounded-[13px] uws:w-[600px] uws:h-[800px] '>
           <Image
             alt='digital_marketing1'
             src='/images/home/courses/digital_marketing1.png'
@@ -149,7 +163,7 @@ const Courses = () => {
         <div className="w-full flex justify-center space-x-2  md:space-x-4 lg:space-x-4 px-4 md:px-3  lg:px-0 ">
           {/* Show the 3 cards at a time */}
           {displayedCards.map((card) => (
-            <div key={card.id} className=" lg:w-[200px] lg:h-[347px] exl:w-[300px] md:h-48 p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] uws:h-[500px]">
+            <div key={card.id} className=" lg:w-[270px] lg:h-[347px] exl:w-[300px]  p-1 md:p-4 lg:p-4 bg-white rounded-[10px] lg:rounded-[18px] uws:w-[450px] uws:h-[500px]">
               <Image
                 alt={`Card ${card.id}`}
                 src={card.imageSrc}

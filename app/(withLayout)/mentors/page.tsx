@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import mentors_img from '@/public/images/home/mentors/mentors.png'
-import mentors from '@/public/images/home/mentors/one.png'
+//import mentors from '@/public/images/home/mentors/one.png'
 import Mentors from '@/shared_comp/Mentors/Mentors';
 import { mentors_data } from './mentors_data';
 
@@ -14,7 +14,7 @@ const page = () => {
                 width={1000} 
                 height={200} 
                quality={95}
-                className='w-full h-[300px] md:h-[453px] lg:h-[453px] uws:h-[600px]' 
+                className='w-full h-[300px] md:h-[453px] lg:h-[453px] uws:h-[650px]' 
             />
             <div className='absolute  text-[35px] md:text-[60px] lg:text-[60px] regularBrush text-center w-full -mt-48 md:-mt-72 lg:-mt-72 text-white'>
                <p className=''>mentors</p>
@@ -28,7 +28,7 @@ const page = () => {
                 {/* ========================================== */}
                       
                       {/* =============================== */}
-                      <div className=' w-9/12 mx-auto mt-40 grid xs:grid-cols-2  sm:grid-cols-2 md:grid-cols-2 lg: grid-cols-4 exl:grid-cols-4 uws:grid-cols-4'>
+                      <div className=' w-9/12 mx-auto mt-40 grid xs:grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg: grid-cols-4 exl:grid-cols-4 uws:grid-cols-4'>
                     {
                         mentors_data?.map((params,idx)=>(
                              <div key={idx}

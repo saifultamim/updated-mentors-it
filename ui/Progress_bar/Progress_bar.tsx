@@ -10,7 +10,7 @@ import React from 'react';
 const Progress_bar : React.FC<progressBar> = ({ progress }) => {
     return (
         
-           <div className="border border-red-600   mx-auto gap-8">
+           <div className=" mx-auto gap-8 text-white">
         {/* Progress Text */}
         <div className='flex  items-center justify-between '>
           <p>Course Completion</p>
@@ -19,7 +19,7 @@ const Progress_bar : React.FC<progressBar> = ({ progress }) => {
       </div>
         </div>
       {/* Progress Bar Container */}
-      <div className="w-full  bg-gray-300 rounded-full h-1 overflow-hidden">
+      <div className="w-full rounded-full h-1 overflow-hidden">
         <div
         //  ${getColor(progress)}
           className={`h-full transition-all duration-300 bg-[#ED1C24]`}

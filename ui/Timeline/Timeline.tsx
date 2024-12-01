@@ -6,7 +6,7 @@ import { timeline } from '@/utils/types';
 
 const Timeline = ({params}:{params:timeline}) => {
     return (
-        <div className='bg-blue-600 relative rounded-[14px]'>
+        <div className='bg-blue-600 relative rounded-[14px]  w-full'>
          
             <div className='flex text-[12px] montserrat  items-center   px-6 gap-8'>
                 <Image alt='student' src={params.img} width={80} height={80} className='-mt-5' />

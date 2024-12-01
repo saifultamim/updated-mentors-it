@@ -81,6 +81,27 @@ const cardData = [
     level: "Level 5",
     imageSrc: "/images/home/courses/digital_marketing2.png"
   },
+  {
+    id: 12,
+    title: (<> DIGITAL12 <br/> MARKETING </>),
+    subtitle: "Mastery",
+    level: "Level 5",
+    imageSrc: "/images/home/courses/digital_marketing2.png"
+  },
+  {
+    id: 13,
+    title: (<> DIGITAL13 <br/> MARKETING </>),
+    subtitle: "Mastery",
+    level: "Level 5",
+    imageSrc: "/images/home/courses/digital_marketing2.png"
+  },
+  {
+    id: 14,
+    title: (<> DIGITAL14 <br/> MARKETING </>),
+    subtitle: "Mastery",
+    level: "Level 5",
+    imageSrc: "/images/home/courses/digital_marketing2.png"
+  },
   // Add more cards as needed
 ];
 
@@ -169,3 +190,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+

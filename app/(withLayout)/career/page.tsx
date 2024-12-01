@@ -53,14 +53,14 @@ const Page = () => {
                <p className=''>Career</p>
                 </div>
                 {/*input section */}
-      <div className="   xs:w-full sm:w-full      md:w-7/12   lg:w-7/12 exl:w-7/12 uws:w-7/12 relative -mt-16  bg-[#F8F8F8] py-12 mx-auto rounded-[18px]">
+      <div className="   xs:w-11/12 sm:w-11/12         lg:w-7/12 exl:w-7/12 uws:w-7/12 relative -mt-16  bg-[#F8F8F8] px-2 py-12 mx-auto rounded-[18px]">
       <form onSubmit={handleSubmit}>
           {careerFields.map((field, idx) => (
             <div key={idx}>
               <InputField params={field} onChange={handleInputChange} />
             </div>
           ))}
-        <div className='w-4/6 mt-4 mb-4 mx-auto '>
+        <div className='xs:w-6/6 sm:w-6/6  md:w-4/6 lg:w-4/6 exl:w-4/6 uws:w-4/6 mt-4 mb-4 mx-auto '>
         <button
             className=" h-[43px] uws:h-[60px] w-full  bg-black text-white rounded-[5px] montserat font-bold text-[12px] uws:text-[20px] text-center"
             type="submit"
@@ -69,7 +69,7 @@ const Page = () => {
           </button>
         </div>
         </form>
-           <Link href='#'>
+           <Link href='#' className=''>
            <Button params={{color:'#ED1C24',type:'LOGIN/SIGN UP'}}></Button>
            </Link>
 

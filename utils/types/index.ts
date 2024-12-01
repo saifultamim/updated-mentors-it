@@ -52,6 +52,7 @@ export interface FormData {
     placeholder: string;
     value?: string;
     onChange?: React.Dispatch<React.SetStateAction<string>>;
+    name?:string
   }
   
   export interface room_link_formProps {

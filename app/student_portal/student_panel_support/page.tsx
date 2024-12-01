@@ -27,6 +27,7 @@ const Page = () => {
       ]
     
       const handleInputChange = (name:string, value:string) => {
+        console.log('handleInputChange ',name,'+++ ',value)
         setFormData((prevData) => ({
           ...prevData,
           [name]: value
@@ -38,8 +39,8 @@ const Page = () => {
         console.log('Form Data Submitted:', formData);
       };
     return (
-        <div>
-            <Student_panel>
+        <div className='overflow-y-auto bg-black'>
+            <Student_panel url_dashboard_color_change='Support'>
             <form onSubmit={handleSubmit}>
           {supportFields.map((field, idx) => (
             <div key={idx} className='montserrat text-[12px]'>
@@ -49,11 +50,13 @@ const Page = () => {
     <div className='flex justify-end'>
     <textarea
   id="fname"
-  name="fname"
+   name="supportMessage"
   placeholder="SUPPORT MESSAGE"
+  value={formData.supportMessage} // Bind the value to state
+  onChange={(e) => handleInputChange(e.target.name, e.target.value)}
   className={`w-full bg-white h-[300px] md:h-[400px] lg:h-[234px] rounded-[5px] px-4 py-2 text-xs md:text-sm lg:text-base shadow-lg shadow-[#00000040] focus:outline-none focus:ring-2 focus:ring-blue-500 mt-8 placeholder:text-left placeholder:align-top placeholder:text-gray-400`}
 ></textarea>
-<div className=' absolute mt-12  mr-16 '>
+<div className=' absolute mt-12 xs:mt-9 sm:mt-9   mr-16  xs:mr-2 sm:mr-2'>
   <div className='flex '>
     {
       supportMessage.map((params,idx)=>(<div key={idx}>
